@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"
+    />
+    <title>
+      Microsoft Paint Interface
+    </title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="title_bar.css" />
+    <link rel="stylesheet" href="menu_tab.css" />
+    <link rel="stylesheet" href="clipboard.css" />
+  </head>
+  
+  <body>
+    <div class="paint-container">
+      <!-- Title Bar -->
+      <div class="title-bar">
+        <!-- Quick Access Toolbar -->
+        <div class="quick-access">
+          <div class="qa-button">
+            <img src="./images/Paint-logo.png" alt="Paint" />
+          </div>
+          <div class="divider">
+          </div>
+          <div class="save-button">
+            <img src="./images/Save.png" alt="Save" />
+          </div>
+          <div class="qa-button">
+            <img style="height: 24px; margin-bottom: 8px;" src="./images/Back.png"
+            alt="Undo" />
+          </div>
+          <div class="qa-button">
+            <img style="height: 24px; margin-bottom: 8px;" src="./images/Forward.png"
+            alt="Save" />
+          </div>
+          <div class="qa-button dropdown">
+            <img style="height: 13px;" src="./images/Extended1.png" alt="More Options"
+            />
+          </div>
+          <div class="divider">
+          </div>
+          <!-- Title and App Name -->
+          <div class="title-text">
+            Untitled - Paint
+          </div>
+        </div>
+        <!-- Window Controls -->
+        <div class="window-controls">
+          <div class="window-control minimize">
+            <img src="./images/Minimize.png" alt="Minimize" />
+          </div>
+          <div class="window-control maximize">
+            <img src="./images/RestoreDown.png" alt="RestoreDown" />
+          </div>
+          <div class="window-control close">
+            <img src="./images/Close.png" alt="Close" />
+          </div>
+        </div>
+      </div>
+      <!-- Menu Tabs -->
+      <div class="menu-tabs">
+        <div class="menu-tab active">
+          File
+        </div>
+        <div class="menu-tab">
+          Home
+        </div>
+        <div class="menu-tab view-tab">
+          View
+        </div>
+      </div>
+      <!-- Toolbar -->
+      <div class="toolbar">
+        <div class="clipboard-container">
+        </div>
+        <!-- Clipboard Group -->
+        <div class="tool-group">
+          <div class="main-buttons">
+            <!-- Paste Button -->
+            <div class="tool-buttons large">
+              <div class="tool-button">
+                <img class="paste_img" src="./images/Paste.png" alt="Paste" />
+                <span style="font-size: 11px">
+                  Paste
+                </span>
+                <div class="dropdown-arrow">
+                  ▼
+                </div>
+              </div>
+            </div>
+            <!-- Cut and Copy Buttons -->
+            <div class="small-buttons">
+              <div class="small-button">
+                <img src="./images/Cut.png" alt="Cut" />
+              </div>
+              <div class="small-button">
+                <img src="./images/Copy.png" alt="Copy" />
+              </div>
+            </div>
+            <div class="divider-long">
+            </div>
+          </div>
+          <!-- Clipboard Label -->
+          <div class="tool-label">
+            Clipboard
+          </div>
+        </div>
+        <!-- Image Group -->
+        <div class="tool-group">
+          <!-- Large Select Button -->
+          <div class="main-buttons">
+            <div class="tool-buttons-image large">
+              <div class="tool-button">
+                <img src="./images/Select.png" alt="Select" />
+                <div style="font-size: 11px">
+                  Select
+                </div>
+                <div class="dropdown-arrow">
+                  ▼
+                </div>
+              </div>
+            </div>
+            <!-- Crop, Resize, Rotate Buttons -->
+            <div class="small-buttons">
+              <div class="small-button">
+                <img src="./images/Crop.png" alt="Crop" />
+              </div>
+              <div class="small-button">
+                <img class="resize" src="./images/Resize.png" alt="Resize" />
+              </div>
+              <div class="small-button">
+                <img class="rotate" src="./images/Rotate.png" alt="Rotate" />
+              </div>
+            </div>
+            <div class="divider-long">
+            </div>
+          </div>
+          <!-- Image Label -->
+          <div class="tool-label">
+            Image
+          </div>
+        </div>
+
+        <!-- Tools Group -->
+        <div class="tool-group">
+          <div class="tool-buttons">
+            <!-- First Row -->
+            <div class="tool-button">
+              <img class="fix-image" src="./images/Pencil.png" alt="Pencil" />
+            </div>
+            <div class="tool-button">
+              <img class="fix-image" src="./images/Bucket.png" alt="Bucket" />
+            </div>
+            <div class="tool-button">
+              <img class="fix-image" src="./images/A.png" alt="Text" />
+            </div>
+          </div>
+          <div class="tool-buttons">
+            <!-- Second Row -->
+            <div class="tool-button">
+              <img class="fix-image" src="./images/Eraser.png" alt="Eraser" />
+            </div>
+            <div class="tool-button">
+              <img class="fix-image" src="./images/Eyedropper.png" alt="Eyedropper"
+              />
+            </div>
+            <div class="tool-button">
+              <img class="fix-image" src="./images/Search.png" alt="Search" />
+            </div>
+            <div class="divider-long-tool">
+            </div>
+          </div>
+          <!-- Tools Label -->
+          <div class="tool-text">
+            Tools
+          </div>
+        </div>
+        <!-- Brushes -->
+        <div class="brush-group">
+          <!-- Brushes Button -->
+          <div class="brush-buttons large">
+            <div class="brush-button">
+              <img src="./images/Brushes.png" alt="Brushes" />
+              <span class="brush-label">
+                Brushes
+              </span>
+            </div>
+            <div class="dropdown-arrow-brush">
+              ▼
+            </div>
+          </div>
+        </div>
+        <div class="divider-long-brush">
+        </div>
+        <!-- Shapes Group -->
+        <div class="shape-group">
+          <div class="shapes-wrapper">
+            <div class="shapes-container">
+              <div class="tool-button-shape">
+                <img class="image_shape" src="./images/Line.png" alt="Line" />
+              </div>
+              <div class="tool-button-shape">
+                <img class="image_shape" src="./images/Curve.png" alt="Curve" />
+              </div>
+              <div class="tool-button-shape">
+                <img class="image_shape" src="./images/Oval.png" alt="Oval" />
+              </div>
+              <div class="tool-button-shape">
+                <img class="image_shape" src="./images/Rectangle.png" alt="Rectangle"
+                />
+              </div>
+              <div class="tool-button-shape">
+                <img class="image_shape" src="./images/Rounded.png" alt="Rounded Rectangle"
+                />
+              </div>
+              <div class="tool-button-shape">
+                <img class="image_shape" src="./images/Polygon.png" alt="Polygon" />
+              </div>
+              <div class="tool-button-shape">
+                <img class="image_shape" src="./images/Triangle.png" alt="Triangle" />
+              </div>
+              <div class="tool-button-shape">
+                <img class="image_shape" src="./images/RightTriangle.png" alt="Right Triangle"
+                />
+              </div>
+              <div class="tool-button-shape">
+                <img class="image_shape" src="./images/Diamond.png" alt="Diamond" />
+              </div>
+              <div class="tool-button-shape">
+                <img class="image_shape" src="./images/Pentagon.png" alt="Pentagon" />
+              </div>
+              <div class="tool-button-shape">
+                <img class="image_shape" src="./images/Hexagon.png" alt="Hexagon" />
+              </div>
+              <div class="tool-button-shape">
+                <img class="image_shape" src="./images/Right.png" alt="Arrow Right" />
+              </div>
+              <div class="tool-button-shape">
+                <img class="image_shape" src="./images/Left.png" alt="Arrow Left" />
+              </div>
+              <div class="tool-button-shape">
+                <img class="image_shape" src="./images/Up.png" alt="Arrow Up" />
+              </div>
+              <div class="tool-button-shape">
+                <img class="image_shape" src="./images/Down.png" alt="Arrow Down" />
+              </div>
+              <div class="tool-button-shape">
+                <img class="image_shape" src="./images/FourPointStar.png" alt="4Star"
+                />
+              </div>
+              <div class="tool-button-shape">
+                <img class="image_shape" src="./images/FivePointStar.png" alt="5 Star"
+                />
+              </div>
+              <div class="tool-button-shape">
+                <img class="image_shape" src="./images/SixPointStar.png" alt="6 Star"
+                />
+              </div>
+              <div class="tool-button-shape">
+                <img class="image_shape" src="./images/Comment.png" alt="Comment" />
+              </div>
+              <div class="tool-button-shape">
+                <img class="image_shape" src="./images/RoundedComment.png" alt="Rounded"
+                />
+              </div>
+              <div class="tool-button-shape">
+                <img class="image_shape" src="./images/Cloud.png" alt="Cloud" />
+              </div>
+            </div>
+            <div class="shape-controls">
+              <button class="control-button">
+                <img src="./images/UpButton.png" alt="Up Button" />
+              </button>
+              <button class="control-button">
+                <img src="./images/DownButton.png" alt="Down Button" />
+              </button>
+              <button class="control-button">
+                <img src="./images/Extended.png" alt="Extended" />
+              </button>
+            </div>
+          </div>
+          <div class="outline-fill-container">
+            <div class="tool-button">
+              <img src="./images/Outline.png" alt="Outline" />
+              <!-- <div>Outline</div>
+              -->
+            </div>
+            <div class="tool-button">
+              <img src="./images/Fill.png" alt="Fill" />
+            </div>
+          </div>
+          <div class="outline-fill-container">
+            <div class="outline-text">
+              Outline
+              <span class="dropdown-arrow-shape-first">
+                ▼
+              </span>
+            </div>
+            <div class="fill-text">
+              Fill
+              <span class="dropdown-arrow-shape-second">
+                ▼
+              </span>
+              
+            </div>
+            
+          </div>
+          
+        </div>
+
+        <div class="divider-long-brush">
+        </div>
+        
+        <!-- Size -->
+        <div class="brush-group">
+          <!-- Size Button -->
+          <div class="brush-buttons large">
+            <div class="brush-button">
+              <img style="height: 32px; margin-bottom: 6px;" src="./images/Size.png"
+              alt="Size" />
+              <span class="brush-label">
+                Size
+              </span>
+            </div>
+            <div class="dropdown-arrow-brush">
+              ▼
+            </div>
+          </div>
+        </div>
+        <div class="divider-long-brush">
+        </div>
+
+
+        <!-- Colors -->
+        <div class="tool-group-colors">
+          <!-- Large Select Button -->
+          <div class="main-buttons-color">
+            <div class="tool-buttons-color large">
+              <div class="tool-button">
+                <img class="main-color-1" src="./images/Color1.png" alt="Color1" />
+                <div style="font-size: 11px">
+                  Color
+                </div>
+                <div style="font-size: 11px">
+                  1
+                </div>
+              </div>
+            </div>
+            <div class="tool-buttons-color2 large">
+              <div class="tool-button">
+                <img class="main-color-2" src="./images/Color2.png" alt="Color2" />
+                <div style="font-size: 11px">
+                  Color
+                </div>
+                <div style="font-size: 11px">
+                  2
+                </div>
+              </div>
+            </div>
+            <!-- Color Grid Palette -->
+            <div class="color-palette">
+              <div class="color-swatch" style="background-color: #000000;"></div>
+              <div class="color-swatch" style="background-color: #7F7F7F;"></div>
+              <div class="color-swatch" style="background-color: #880015;"></div>
+              <div class="color-swatch" style="background-color: #ED1C24;"></div>
+              <div class="color-swatch" style="background-color: #FF7F27;"></div>
+              <div class="color-swatch" style="background-color: #FFF200;"></div>
+              <div class="color-swatch" style="background-color: #22B14C;"></div>
+              <div class="color-swatch" style="background-color: #00A2E8;"></div>
+              <div class="color-swatch" style="background-color: #3F48CC;"></div>
+              <div class="color-swatch" style="background-color: #A349A4;"></div>
+              <div class="color-swatch" style="background-color: #ffffff;"></div>
+              <div class="color-swatch" style="background-color: #C3C3C3;"></div>
+              <div class="color-swatch" style="background-color: #B97A57;"></div>
+              <div class="color-swatch" style="background-color: #FFAEC9;"></div>
+              <div class="color-swatch" style="background-color: #FFC90E;"></div>
+              <div class="color-swatch" style="background-color: #EFE4B0;"></div>
+              <div class="color-swatch" style="background-color: #B5E61D;"></div>
+              <div class="color-swatch" style="background-color: #99D9EA;"></div>
+              <div class="color-swatch" style="background-color: #7092BE;"></div>
+              <div class="color-swatch" style="background-color: #C8BFE7;"></div>
+              <div class="color-swatch" style="background-color: #ffffff;"></div>
+              <div class="color-swatch" style="background-color: #ffffff;"></div>
+              <div class="color-swatch" style="background-color: #ffffff;"></div>
+              <div class="color-swatch" style="background-color: #ffffff;"></div>
+              <div class="color-swatch" style="background-color: #ffffff;"></div>
+              <div class="color-swatch" style="background-color: #ffffff;"></div>
+              <div class="color-swatch" style="background-color: #ffffff;"></div>
+              <div class="color-swatch" style="background-color: #ffffff;"></div>
+              <div class="color-swatch" style="background-color: #ffffff;"></div>
+              <div class="color-swatch" style="background-color: #ffffff;"></div>
+            </div>
+
+            <!-- Edit color -->
+            <div class="tool-buttons-rainbow large">
+              <div class="tool-button">
+                <img class="main-color-2" src="./images/Rainbow.png" alt="Rainbow" />
+                <div style="font-size: 11px; text-align: center; margin-top: 2px">
+                  Edit colors
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+
+
+          
+          <!-- Color Label -->
+          <div class="tool-label">
+            Colors
+
+          </div>
+
+        </div>
+        <div class="divider-long-brush"></div>
+
+        <!-- Edit with Paint 3D -->
+        <div class="tool-buttons-rainbow large">
+          <div class="tool-button-rainbow">
+            <img class="main-color-rainbow" src="./images/3D.png" alt="3D" />
+            <div style="font-size: 11px; text-align: center; margin-top: 3px">
+              Edit with Paint 3D
+            </div>
+          </div>
+
+
+        </div>
+        <div class="divider-long-brush"></div>
+      </div>
+      
+      <!-- Canvas Area -->
+      <div class="canvas-area">
+      </div>
+  </body>
+
+</html>

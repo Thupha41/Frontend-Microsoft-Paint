@@ -1,0 +1,26 @@
+
+.menu-tabs {
+    background-color: white;
+    display: flex;
+    color: #000;
+    border-bottom: 1px solid #a9a9a9;
+}
+
+.menu-tab {
+    padding: 6px 14px;
+    cursor: pointer;
+    font-size: 10px;
+    background-color: #f3f3f3;
+}
+
+
+.menu-tab.active {
+    background-color: #0078d7;
+    padding: 6px 20px;
+    color: #fff;
+}
+
+
+.menu-tab:not(.view-tab) {
+    border-bottom: none;
+}

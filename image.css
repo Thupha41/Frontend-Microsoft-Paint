@@ -1,0 +1,61 @@
+
+  
+  .tool-buttons.large {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #f3f4f6;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 8px;
+    padding: 4px 8px;
+    width: 70px;
+  }
+  
+  .tool-button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 12px;
+    cursor: pointer;
+  }
+  
+  .dropdown-arrow {
+    font-size: 12px;
+    margin-left: 4px;
+    cursor: pointer;
+  }
+
+  .tool-buttons.small {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+  }
+  
+  .image-button {
+    display: flex;
+    align-items: center;
+    padding: 4px 6px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    font-size: 12px;
+    cursor: pointer;
+  }
+  
+  .image-button img {
+    margin-right: 4px;
+  }
+  
+  .image-button:hover {
+    background-color: #e0e0e0;
+  }
+  
+  /* Image Label */
+  .tool-label {
+    font-size: 11px;
+    margin-top: 6px;
+    color: #616161;
+    text-align: center;
+  }
+  

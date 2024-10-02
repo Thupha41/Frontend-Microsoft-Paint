@@ -1,0 +1,11 @@
+.main-buttons {
+    display: flex;
+    height: 85px;
+    margin-left: -5px;
+  }
+
+
+
+.tool-button .paste_img {
+    height: 41px;
+}
